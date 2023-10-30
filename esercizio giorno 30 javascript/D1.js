@@ -85,8 +85,9 @@ name="Sansone";
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-let quattro=4;
-let differenza =quattro-x;
+
+
+let differenza=x-4;
 console.log(differenza)
 
 
