@@ -29,3 +29,19 @@ v='valore' ;// inizializzazione variabile metto valore nella scatola
 
 
 var q= "valore" //dichiarazione e inizializzazione di una variabile"
+
+
+let num12 =10;
+let num23=3;
+
+let sum=num12+num23;
+let diff=num12-num23;
+let moltiplica=num12*num23;
+let divisione=num12/num23;
+let resto =num12%num23;
+
+console.log(sum);
+console.log(diff);
+console.log(moltiplica);
+console.log(divisione);
+console.log(resto);
