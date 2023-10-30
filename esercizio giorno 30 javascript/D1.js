@@ -101,15 +101,15 @@ console.log(differenza)
 let name1="john";
 let name2="John";
 
-let uguali = (" levariabili 1 e 2 sono uguali?"+name1===name2)? "true":"false" //name 1 è diversa considerando il tipo rispetto a name2;
+let uguali = (name1===name2)? "true":"false" //name 1 è diversa considerando il tipo rispetto a name2;
 
-console.log(uguali);
+console.log(" le variabili john e John sono uguali?"+uguali);
 
 let nomo1=name1.toLowerCase();
 let nomo2=name2.toLowerCase();
 let ugualiminuscoli=(nomo1===nomo2)? "true":"false"
 
-console.log(ugualiminuscoli);
+console.log(" le variabili john e john sono uguali?"+ugualiminuscoli);
 
 
 
