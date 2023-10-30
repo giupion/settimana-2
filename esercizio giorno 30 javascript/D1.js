@@ -76,8 +76,8 @@ console.log(x)
 /* SCRIVI QUI LA TUA RISPOSTA */
 name="Sansone";
 
-const mortadella="buona";
-mortadella=15;
+//const mortadella="buona";
+//mortadella=15;//
 
 
 
@@ -100,8 +100,16 @@ console.log(differenza)
 let name1="john";
 let name2="John";
 
-let uguali = (name1==name2)? "true":"false"
+let uguali = (name1===name2)? "true":"false" //name 1 è diversa considerando il tipo rispetto a name2;
 
 console.log(uguali);
+
+let nomo1=name1.toLowerCase();
+let nomo2=name2.toLowerCase();
+let ugualiminuscoli=(nomo1===nomo2)? "true":"false"
+
+console.log(ugualiminuscoli);
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
