@@ -54,7 +54,7 @@ let num2=20;
 
 let somma=num1+num2;
 
-console.log(somma);
+console.log( "las somma è"+somma);
 
 
 
