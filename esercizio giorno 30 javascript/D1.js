@@ -114,3 +114,5 @@ console.log(" le variabili john e john sono uguali?"+ugualiminuscoli);
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
