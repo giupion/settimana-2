@@ -101,7 +101,7 @@ console.log(differenza)
 let name1="john";
 let name2="John";
 
-let uguali = (name1===name2)? "true":"false" //name 1 è diversa considerando il tipo rispetto a name2;
+let uguali = (" levariabili 1 e 2 sono uguali?"+name1===name2)? "true":"false" //name 1 è diversa considerando il tipo rispetto a name2;
 
 console.log(uguali);
 
