@@ -36,12 +36,12 @@ let name="Giuseppe";
 
 //oppure posso fare //
 
-let name2;
-name2="giuseppe";
+let name3;
+name3="giuseppe";
 
 console.log(name);
 
-console.log(name2);
+console.log(name3);
 
 
 /* ESERCIZIO 3
@@ -96,5 +96,12 @@ console.log(differenza)
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
+
+let name1="john";
+let name2="John";
+
+let uguali = (name1==name2)? "true":"false"
+
+console.log(uguali);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
