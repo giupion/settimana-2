@@ -74,6 +74,11 @@ console.log(x)
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
+name="Sansone";
+
+const mortadella="buona";
+mortadella=15;
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
