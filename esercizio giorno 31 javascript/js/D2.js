@@ -85,22 +85,12 @@ else{
 const a=15
 const b=45
 const c=60
-
+let arro=[]
 
 if(a>b){if(a>c){console.log(a)}
 else{if(c>a){console.log(c)}}}
 else{if(b>c){console.log(b)}
 else{if(c>a){console.log(c)}}}
-
-
-
-
-
-
-
-
-
-
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
