@@ -82,15 +82,21 @@ else{
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const a=15
-const b=45
-const c=60
-let arro=[]
+const a=90
+const b=80
+const c=59
+let arro=[];
 
-if(a>b){if(a>c){console.log(a)}
+
+if(a>b){if(a>c){if(b>c){console.log(a);
+  console.log(b);
+  console.log(c);}}
+  else{if(c>a){console.log(c)}}}
+else{if(b>c){if(c>a){console.log(b);
+  console.log(c);
+  console.log(a)}}
 else{if(c>a){console.log(c)}}}
-else{if(b>c){console.log(b)}
-else{if(c>a){console.log(c)}}}
+
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -124,8 +130,9 @@ else{console.log("questo numero è dispari")}
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 1
+let val = 0
 if (val < 10) {
+
     console.log("Meno di 10");
   } else if (val < 5) {
     console.log("Meno di 5");
