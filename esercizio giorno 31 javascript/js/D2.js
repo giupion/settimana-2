@@ -82,17 +82,18 @@ else{
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const num13=13;
-const num14=14;
-const num15=15;
+const a=15
+const b=45
+const c=60
+
+
+if(a>b){if(a>c){console.log(a)}
+else{if(c>a){console.log(c)}}}
+else{if(b>c){console.log(b)}
+else{if(c>a){console.log(c)}}}
 
 
 
-if(num15>num13){console.log(num15)
-if(num15>num14){
-  console.log("il valore più grande è"+num15)
-  if(num14>num13){console.log(num15+num14+num13)}
-    else{console.log("num15+num13+num14")}}}
 
 
 
@@ -133,7 +134,7 @@ else{console.log("questo numero è dispari")}
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 7
+let val = 1
 if (val < 10) {
     console.log("Meno di 10");
   } else if (val < 5) {
