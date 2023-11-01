@@ -2,9 +2,9 @@
 //Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
 //Alla fine mostra il risultato in console.//
 
-let a = 45;
-let b = 54;
-let c = 43;
+let a = 2;
+let b = 12;
+let c = 9;
 
 
 if (a > b) {
