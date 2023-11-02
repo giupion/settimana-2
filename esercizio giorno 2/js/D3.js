@@ -142,21 +142,22 @@ const eyeColor = {
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
+for(i=0;)
 switch (starWarsCharacters[i].eye_color) {
   case "blue":
-    eyeColor.push(starWarsCharacters[i].eye_color.blue)
+    eyeColor.blue.push(starWarsCharacters[i].eye_color)
     break;
   case "yellow":
-    eyeColor.push(starWarsCharacters[i].eye_color.yellow)
+    eyeColor.yellow.push(starWarsCharacters[i].eye_color)
     break;
   case "brown":
-    eyeColor.push(starWarsCharacters[i].eye_color.brown)
+    eyeColor.brown.push(starWarsCharacters[i].eye_color)
     break;
   case "red":
-    eyeColor.push(starWarsCharacters[i].eye_color.red)
+    eyeColor.red.push(starWarsCharacters[i].eye_color)
     break;
   case "blue-gray":
-    eyeColor.push(starWarsCharacters[i].eye_color.blue_gray)
+    eyeColor.blue_gray.push(starWarsCharacters[i].eye_color)
 }
 
 /* ESERCIZIO 6
