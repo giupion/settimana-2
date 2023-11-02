@@ -179,25 +179,39 @@ switch (starWarsCharacters) {
 */
 
 
+
+
+/* ESERCIZIO 8
+  Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
+*/
 let mass = 0
+let robot=[];
 for (i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name);
   mass += starWarsCharacters[i].mass;
   
   if (starWarsCharacters[i].gender === "female") { femaleCharacters.push(starWarsCharacters[i].name); }
+  if (starWarsCharacters[i].gender === "n/a") { robot.push(starWarsCharacters[i]); }
+
 }
+
 if(mass>1000){console.log("DANGER! OVERLOAD ALERT: escape from ship now!")}
 else if(mass>900){console.log("Critical Load: Over 900")}
   else if(mass>700){console.log("Warning: Load is over 700")}
   else if(mass>500){console.log("Ship is half loaded")}
   else if(mass<500){console.log("Ship is under loaded")}
 
+
+
 console.log([characters])
 console.log([femaleCharacters])
 console.log([mass])
-/* ESERCIZIO 8
-  Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
-*/
+
+
+robot[0].gender="robot";
+robot[1].gender="robot";
+robot[2].gender="robot";
+console.log([robot])
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
