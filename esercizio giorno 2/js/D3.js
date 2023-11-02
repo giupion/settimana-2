@@ -242,8 +242,12 @@ console.log([characters])
 */
 let randomico=[];
 for (i = 0; i < starWarsCharacters.length; i++)
-{randomico.push(starWarsCharacters[i])
-  
-  }
 
-console.log([self.crypto.getRandomValues(randomico)])
+{
+  let obj = starWarsCharacters[i];
+  
+  //console.log(obj.name);
+  randomico.push(obj);
+  }
+  console.log(randomico)
+
