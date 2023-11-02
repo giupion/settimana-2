@@ -192,6 +192,7 @@ console.log(peso)
 */
 let robot=[]
 let mass = 0
+random="";
 for (i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name);
   mass += starWarsCharacters[i].mass;
@@ -199,6 +200,7 @@ for (i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "female") { femaleCharacters.push(starWarsCharacters[i].name); }
   if (starWarsCharacters[i].gender === "n/a") { robot.push(starWarsCharacters[i]); }
 }
+
 if(mass>1000){console.log("DANGER! OVERLOAD ALERT: escape from ship now!")}
 else if(mass>900){console.log("Critical Load: Over 900")}
   else if(mass>700){console.log("Warning: Load is over 700")}
@@ -214,10 +216,14 @@ robot[1].gender="robot";
 robot[2].gender="robot";
 console.log([robot])
 
+
+
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
+
+
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
