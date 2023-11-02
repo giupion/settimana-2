@@ -142,20 +142,20 @@ const eyeColor = {
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-switch (starWarsCharacters) {
-  case 1:
+switch (starWarsCharacters[i].eye_color) {
+  case "blue":
     eyeColor.push(starWarsCharacters[i].eye_color.blue)
     break;
-  case 2:
+  case "yellow":
     eyeColor.push(starWarsCharacters[i].eye_color.yellow)
     break;
-  case 3:
+  case "brown":
     eyeColor.push(starWarsCharacters[i].eye_color.brown)
     break;
-  case 4:
+  case "red":
     eyeColor.push(starWarsCharacters[i].eye_color.red)
     break;
-  case 5:
+  case "blue-gray":
     eyeColor.push(starWarsCharacters[i].eye_color.blue_gray)
 }
 
@@ -190,6 +190,12 @@ console.log(peso)
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
+
+/* --EXTRA-- ESERCIZIO 9
+  Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
+  Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
+*/
 let mass = 0
 let robot=[];
 for (i = 0; i < starWarsCharacters.length; i++) {
@@ -218,11 +224,6 @@ robot[0].gender="robot";
 robot[1].gender="robot";
 robot[2].gender="robot";
 console.log([robot])
-
-/* --EXTRA-- ESERCIZIO 9
-  Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
-  Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
-*/
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
