@@ -162,8 +162,14 @@ switch (starWarsCharacters) {
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-
-
+let c=0;
+let peso=0;
+while(c<starWarsCharacters.length)
+{
+  peso+=starWarsCharacters[c].mass;
+  c++;
+}
+console.log(peso)
 
 
 /* ESERCIZIO 7
