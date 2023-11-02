@@ -240,14 +240,12 @@ console.log([characters])
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
-let randomico=[];
-for (i = 0; i < starWarsCharacters.length; i++)
+const randomico=[];
 
-{
-  let obj = starWarsCharacters[i];
+
+  var indice = Math.floor(Math.random() * starWarsCharacters.length);
+  var valore = starWarsCharacters[indice];
   
-  //console.log(obj.name);
-  randomico.push(obj);
-  }
-  console.log(randomico)
 
+console.log(valore)
+ 
