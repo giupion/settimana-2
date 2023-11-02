@@ -144,20 +144,21 @@ const eyeColor = {
 for(i = 0; i < starWarsCharacters.length; i++)
 switch (starWarsCharacters[i].eye_color) {
   case "blue":
-    eyeColor.blue.push(starWarsCharacters[i].eye_color)
+    eyeColor.blue.push(starWarsCharacters[i])
     break;
   case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[i].eye_color)
+    eyeColor.yellow.push(starWarsCharacters[i])
     break;
   case "brown":
-    eyeColor.brown.push(starWarsCharacters[i].eye_color)
+    eyeColor.brown.push(starWarsCharacters[i])
     break;
   case "red":
-    eyeColor.red.push(starWarsCharacters[i].eye_color)
+    eyeColor.red.push(starWarsCharacters[i])
     break;
   case "blue-gray":
-    eyeColor.blue_gray.push(starWarsCharacters[i].eye_color)
+    eyeColor.blue_gray.push(starWarsCharacters[i])
 }
+console.log(eyeColor)
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
@@ -185,6 +186,10 @@ console.log(peso)
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+
+/* ESERCIZIO 8
+  Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
+*/
 let robot=[]
 let mass = 0
 for (i = 0; i < starWarsCharacters.length; i++) {
@@ -208,9 +213,6 @@ robot[0].gender="robot";
 robot[1].gender="robot";
 robot[2].gender="robot";
 console.log([robot])
-/* ESERCIZIO 8
-  Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
-*/
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
