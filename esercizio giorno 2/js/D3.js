@@ -104,26 +104,19 @@ const starWarsCharacters = [
 
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
-*/let characters=[];
-let femaleCharacters=[];
+*/let characters = [];
+let femaleCharacters = [];
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "characters" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for( i=0;i<starWarsCharacters.length;i++){
-  characters.push(starWarsCharacters[i].name);
-  if(starWarsCharacters[i].gender==="female")
- {femaleCharacters.push(starWarsCharacters[i].name);}
-  }
 
-  console.log([characters])
-  console.log([femaleCharacters])
-  
-  
-  
- 
+
+
+
+
 
 
 /* ESERCIZIO 3
@@ -136,11 +129,12 @@ for( i=0;i<starWarsCharacters.length;i++){
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
-const eyeColor={ blue:[],
-yellow:[],
-brown:[],
-red:[],
-blue_gray:[]
+const eyeColor = {
+  blue: [],
+  yellow: [],
+  brown: [],
+  red: [],
+  blue_gray: []
 }
 
 
@@ -148,61 +142,28 @@ blue_gray:[]
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-switch(starWarsCharacters){
+switch (starWarsCharacters) {
   case 1:
     eyeColor.push(starWarsCharacters[i].eye_color.blue)
-break;
-case 2:
-  eyeColor.push(starWarsCharacters[i].eye_color.yellow)
-  break;
+    break;
+  case 2:
+    eyeColor.push(starWarsCharacters[i].eye_color.yellow)
+    break;
   case 3:
-eyeColor.push(starWarsCharacters[i].eye_color.brown)
-break;
-case 4:
-  eyeColor.push(starWarsCharacters[i].eye_color.red)
-  break;
+    eyeColor.push(starWarsCharacters[i].eye_color.brown)
+    break;
+  case 4:
+    eyeColor.push(starWarsCharacters[i].eye_color.red)
+    break;
   case 5:
     eyeColor.push(starWarsCharacters[i].eye_color.blue_gray)
 }
-for( i=0;i<starWarsCharacters.length;i++){
-  characters.push(starWarsCharacters[i].name);
-  if(starWarsCharacters[i].gender==="female")
- {femaleCharacters.push(starWarsCharacters[i].name);}
- switch(starWarsCharacters){
-  case 1:
-    eyeColor.push(starWarsCharacters[i].eye_color.blue)
-break;
-case 2:
-  eyeColor.push(starWarsCharacters[i].eye_color.yellow)
-  break;
-  case 3:
-eyeColor.push(starWarsCharacters[i].eye_color.brown)
-break;
-case 4:
-  eyeColor.push(starWarsCharacters[i].eye_color.red)
-  break;
-  case 5:
-    eyeColor.push(starWarsCharacters[i].eye_color.blue_gray)
-}
-  }
-  console.log([eyeColor]) 
-
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-let mass=[];
 
-for( i=0;i<starWarsCharacters.length;i++){
-  mass.push(starWarsCharacters[i].mass);}
-  console.log(mass)
-let c=0;
-  while(c<mass.length)
-  {Number(mass(c))
-    mass+=mass[c]
-  }
 
-  console.log(mass)
 
 
 /* ESERCIZIO 7
@@ -217,6 +178,23 @@ let c=0;
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+
+let mass = 0
+for (i = 0; i < starWarsCharacters.length; i++) {
+  characters.push(starWarsCharacters[i].name);
+  mass += starWarsCharacters[i].mass;
+  
+  if (starWarsCharacters[i].gender === "female") { femaleCharacters.push(starWarsCharacters[i].name); }
+}
+if(mass>1000){console.log("DANGER! OVERLOAD ALERT: escape from ship now!")}
+else if(mass>900){console.log("Critical Load: Over 900")}
+  else if(mass>700){console.log("Warning: Load is over 700")}
+  else if(mass>500){console.log("Ship is half loaded")}
+  else if(mass<500){console.log("Ship is under loaded")}
+
+console.log([characters])
+console.log([femaleCharacters])
+console.log([mass])
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
