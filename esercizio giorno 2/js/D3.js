@@ -145,6 +145,7 @@ for(i = 0; i < starWarsCharacters.length; i++)
 switch (starWarsCharacters[i].eye_color) {
   case "blue":
     eyeColor.blue.push(starWarsCharacters[i])
+    //inserisci alliniterno di questo oggetto che ha proprieta blu l'oggetto che hai iterato
     break;
   case "yellow":
     eyeColor.yellow.push(starWarsCharacters[i])
@@ -192,12 +193,16 @@ console.log(peso)
 */
 let robot=[]
 let mass = 0
-random="";
+
 for (i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name);
   mass += starWarsCharacters[i].mass;
   
-  if (starWarsCharacters[i].gender === "female") { femaleCharacters.push(starWarsCharacters[i].name); }
+  if (starWarsCharacters[i].gender === "female") { 
+   /* let newObj={name:starWarsCharacters[i].name
+    }
+    femaleCharacters,push(newObj)*/
+    femaleCharacters.push(starWarsCharacters[i].name); }
   if (starWarsCharacters[i].gender === "n/a") { robot.push(starWarsCharacters[i]); }
 }
 
@@ -222,6 +227,12 @@ console.log([robot])
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
+
+for(i=0;i<characters.length;i++)
+{for(j=0;j<femaleCharacters.length;j++)
+{if(femaleCharacters[j]===characters[i])
+{delete characters[i]}}}
+console.log([characters])
 
 
 
