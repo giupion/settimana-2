@@ -74,12 +74,22 @@ let total=0;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function addToShoppingCart(){
+function addToShoppingCart(shoppingCart){
     
-             
+    let newObj={
+        price:8,
+        name:"spadelaser",
+        id:"fantasy",
+        quantity:5,
+    }
+    shoppingCart.push(newObj);
+    
+    return shoppingCart.length;
             }
+
             
-            console.log(addToShoppingCartshoppingCartTotal())
+            
+            console.log(addToShoppingCart(shoppingCart))
     
 
 /* EXTRA 4
