@@ -118,7 +118,6 @@ let amico=str.split("");
          { return  str.charAt(i).toUpperCase() + str.slice(i + 1); }
 
     }
-
 }
 
 console.log(upperFirst("giuseppe vincenzo giovanni"))
@@ -141,6 +140,8 @@ console.log(cutString("Taglio"))
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
+
+
 
 function giveMeRandom(n){
 let array=[];
