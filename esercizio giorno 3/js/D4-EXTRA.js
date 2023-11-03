@@ -6,6 +6,30 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
+
+
+
+
+
+
+function giveMeRandom(n){
+    let array=[];
+    for(i=0;i<n;i++)
+        { let casuale=Math.random()*n;
+            
+        array.push(casuale);
+        function checkArray(array){
+            for(c=0;array.length;i++){if (array[i]>5){console.log(array=array[i])}}
+    }
+    return array;
+  
+    }
+
+}
+    
+    console.log(giveMeRandom(15))
+    console.log(checkArray())
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 2
@@ -14,6 +38,23 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const shoppingCart=[{price:20,
+name:"dinosauri",
+id:"dino",
+quantity:"5",},
+
+{price:5,
+    name:"pentola",
+    id:"cucina",
+    quantity:"5",},
+
+    {price:11,
+        name:"draghi",
+        id:"fantasy",
+        quantity:"5",}]
+
+        function shoppingCartTotal(){}
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
