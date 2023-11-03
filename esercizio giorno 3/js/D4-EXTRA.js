@@ -12,7 +12,7 @@
 
 
 
-function giveMeRandom(n){
+/*function giveMeRandom(n){
     let array=[];
     for(i=0;i<n;i++)
         { let casuale=Math.random()*n;
@@ -28,7 +28,7 @@ function giveMeRandom(n){
 }
     
     console.log(giveMeRandom(15))
-    console.log(checkArray())
+    console.log(checkArray()) */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -42,19 +42,30 @@ function giveMeRandom(n){
 const shoppingCart=[{price:20,
 name:"dinosauri",
 id:"dino",
-quantity:"5",},
+quantity:5,},
 
 {price:5,
     name:"pentola",
     id:"cucina",
-    quantity:"5",},
+    quantity:5,},
 
     {price:11,
         name:"draghi",
         id:"fantasy",
-        quantity:"5",}]
+        quantity:5,}];
 
-        function shoppingCartTotal(){}
+        function shoppingCartTotal(){
+let total=0;
+            for(i=0;i<shoppingCart.length;i++)
+            { let price=shoppingCart[i].price;
+            let quantity=shoppingCart[i].quantity;
+             total+=price*quantity;}
+        
+            return total;
+         
+        }
+        
+        console.log(shoppingCartTotal())
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
