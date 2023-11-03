@@ -12,7 +12,7 @@
 
 
 
-/*function giveMeRandom(n){
+function giveMeRandom(n){
     let array=[];
     for(i=0;i<n;i++)
         { let casuale=Math.random()*n;
@@ -28,7 +28,7 @@
 }
     
     console.log(giveMeRandom(15))
-    console.log(checkArray()) */
+    console.log(checkArray()) 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -127,6 +127,16 @@ console.log(latestShoppingCart(shoppingCart))
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
+
+function loopUntil(x){
+   {for(i=0;i<x;i++){
+
+      randomico= Math.random()*9;
+      if(randomico>x) 
+      {else if(randomico>x){else if(randomico>x)
+        {}}}
+    }}
+}
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 7
