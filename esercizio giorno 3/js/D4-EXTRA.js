@@ -27,8 +27,7 @@ function giveMeRandom(n){
 
 }
     
-    console.log(giveMeRandom(15))
-    console.log(checkArray()) 
+ 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -128,15 +127,13 @@ console.log(latestShoppingCart(shoppingCart))
 */
 
 
-function loopUntil(x){
-   {for(i=0;i<x;i++){
+//function loopUntil(x){
+   //{for(i=0;i<x;i++)
 
-      randomico= Math.random()*9;
-      if(randomico>x) 
-      {else if(randomico>x){else if(randomico>x)
-        {}}}
-    }}
-}
+      //randomico= Math.random()*9;
+     // if(randomico>x) 
+    
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 7

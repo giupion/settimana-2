@@ -108,18 +108,25 @@ console.log(reverseString("MIO"))
 */
 
 
-function upperFirst(str) {
 
 
-let amico=str.split("");
 
-    for (i = 0; i < amico.length; i++) {
-        if (amico[i] === "g" || "v")
-         { return  str.charAt(i).toUpperCase() + str.slice(i + 1); }
-
+    function upperFirst(string) {
+        let words = string.split(" ");
+        let fraseConMaiuscole = "";
+    
+      for (let i = 0; i < words.length; i++) {
+        let singleWord = words[i];
+        fraseConMaiuscole += singleWord.charAt(0).toUpperCase() + singleWord.slice(1) + "";
+        if (i < words.length - 1) {
+            fraseConMaiuscole += " ";
+        }
+      }
+      return fraseConMaiuscole;
     }
-}
+    
 
+   
 console.log(upperFirst("giuseppe vincenzo giovanni"))
 
 
