@@ -99,14 +99,16 @@ function addToShoppingCart(shoppingCart){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 
-function maxShoppingCart(shoppingCart){
- 
+function maxShoppingCart(maxprice){
+   
+    for(i=0;i<shoppingCart.length;i++)
+    {  price=shoppingCart[i].price;
+     maxprice=Math.max(shoppingCart[i].price)}
 
-        if(shoppingCart[0].price>shoppingCart[1].price&&shoppingCart[1].price>shoppingCart[2].price&&shoppingCart[2].price>shoppingCart[3].price)
-    {return shoppingCart[0]}
+    return maxprice;
     
 }
-console.log(maxShoppingCart(shoppingCart))
+console.log(maxShoppingCart())
 /* EXTRA 5
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
@@ -125,20 +127,44 @@ console.log(latestShoppingCart(shoppingCart))
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
-
-//function loopUntil(x){
-   //{for(i=0;i<x;i++)
-
-      //randomico= Math.random()*9;
-     // if(randomico>x) 
+function loopUntil(n){
+let randomico=0;
     
-
+      for(i=0;n>randomico;i++)
+    {console.log(randomico=Math.floor(Math.random()*10))
+        }
+   
+    
+    return randomico;
+}
+    
+loopUntil(5)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
+function average(array) {
+    let somma = 0;
+    let media = 0;
+    for (i = 0; i < array.length; i++) {
+     
+            somma += array[i];
+            media = somma / array.length;
+        
+        
+        
 
+
+
+    }
+
+    return media
+
+
+}
+
+console.log(average([4, 3, 4, 5]))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -183,6 +209,8 @@ console.log(antiSpam("GIGI"))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
