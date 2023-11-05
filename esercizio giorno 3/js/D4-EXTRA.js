@@ -26,7 +26,7 @@ function giveMeRandom(n){
     }
 
 }
-    
+    console.log(giveMeRandom())
  
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -145,6 +145,27 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
+
+arrayStringhe=["aj","fsdf","fsddfjf","fj","sjffsd"]
+
+
+var valoreMassimo;
+function longest(valoreMassimo){
+ 
+    for(i=0;i<arrayStringhe.length;i++)
+    {let contenuto=arrayStringhe[i];
+   
+   var valoreMassimo="la riga massima ha lunghezza "+Math.max(contenuto.length)+" indice "+[i]
+
+
+} return valoreMassimo
+    }
+    
+
+
+console.log(longest(valoreMassimo))
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
